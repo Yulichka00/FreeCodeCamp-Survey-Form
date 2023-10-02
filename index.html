@@ -8,11 +8,14 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
+        <div class="Color-filter">
         <h1 id="title">freeCodeCamp Survey Form</h1>
           <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+          <div class="Form-filter"></div>
           <form id="survery-form">
+            
             <fieldset>
-                <label for="name-label">Name
+                <label for="name-label" >Name
                     <input id="name-label" type="text" placeholder="Enter your name" required/>
                 </label>
                 <label for="email-label">Email
@@ -22,14 +25,16 @@
                     <input id="number-label" type="number" min="10" max="99" placeholder="Age"/>
                 </label>
                 <label for="dropdown">Which option best describes your current role?
+                   
                     <select id="dropdown">
-                        <option value="">Select current role</option>
+                        <option value="" selected disabled>Select current role</option>
                         <option value="1">Student</option>
                         <option value="2">Full Time Job</option>
                         <option value="3">Full Time Learner</option>
                         <option value="4">Prefer not to say</option>
                         <option value="5">Other</option>
                     </select>
+                
                 </label>
             </fieldset>
             <hr />
@@ -48,7 +53,7 @@
             <fieldset>
                 <label for="dropdown2">What is your favorite feature of freeCodeCamp?
                 <select id="dropdown2">
-                    <option value="">Select an option</option>
+                    <option value="" selected disabled>Select an option</option>
                     <option value="1">Challenges</option>
                     <option value="2">Projects</option>
                     <option value="3">Community</option>
@@ -83,11 +88,14 @@
                 <label for="courses"><input id="courses" type="checkbox" class="inline"/>Additional Courses</label>
                 <hr />
                 <label for="comments">Any comments or suggestions?
-                    <textarea id="comments" rows="3" cols="50" placeholder="Enter your comment here..."></textarea>
+                    <textarea id="comments" rows="8" cols="50" placeholder="Enter your comment here..."></textarea>
                 </label>
             </fieldset>
             <input type="submit" value="Submit"/>
+            
           </form>
+        </div>
+      </div>
     </body>
   </html>
 
